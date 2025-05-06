@@ -1,0 +1,76 @@
+/* styles.scss or component-specific styles */
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+mat-card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+mat-label {
+  font-weight: 500;
+}
+
+input[matInput] {
+  background-color: #fff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+button[mat-raised-button] {
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: none;
+  border-radius: 8px;
+}
+
+mat-card-actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+mat-card-actions p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+mat-card-actions a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+mat-card-actions a:hover {
+  color: #303f9f;
+}

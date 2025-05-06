@@ -1,0 +1,28 @@
+<mat-card *ngIf="currentUser">
+  <mat-card-header>
+    <mat-card-title>User Profile</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="profile-info">
+      <div class="info-item">
+        <strong>Name:</strong>
+        <span>{{ currentUser.name }}</span>
+      </div>
+
+      <div class="info-item">
+        <strong>Email:</strong>
+        <span>{{ currentUser.email }}</span>
+      </div>
+
+      <div class="info-item">
+        <strong>User ID:</strong>
+        <span>{{ currentUser.id }}</span>
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+  </mat-card-actions>
+</mat-card>

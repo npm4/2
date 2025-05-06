@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="app-toolbar">
+  <span class="app-title">User Auth App</span>
+  <span class="spacer"></span>
+
+  <ng-container *ngIf="currentUser; else notLoggedIn">
+    <button mat-button routerLink="/profile">Profile</button>
+    <button mat-button (click)="logout()">Logout</button>
+  </ng-container>
+
+  <ng-template #notLoggedIn>
+    <button mat-button routerLink="/login">Login</button>
+    <button mat-button routerLink="/register">Register</button>
+  </ng-template>
+</mat-toolbar>
